@@ -4,6 +4,7 @@
  */
 
 if (session_status() === PHP_SESSION_NONE) {
+    require_once __DIR__ . '/session-db.php';
     session_start();
 }
 
